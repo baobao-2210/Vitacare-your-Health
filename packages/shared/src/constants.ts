@@ -1,0 +1,46 @@
+export const QUICK_WATER_OPTIONS_ML = [100, 200, 300, 500] as const;
+
+export const MEAL_TYPES = ['BREAKFAST', 'LUNCH', 'DINNER', 'SNACK'] as const;
+
+export const ACTIVITY_TYPES = [
+  'WALKING', 'RUNNING', 'CYCLING', 'GYM', 'SWIMMING', 'YOGA', 'OTHER'
+] as const;
+
+export const SLEEP_QUALITY_VALUES = [
+  'VERY_BAD', 'BAD', 'FAIR', 'GOOD', 'VERY_GOOD'
+] as const;
+
+export const DATA_SOURCES = ['MANUAL', 'HEALTHKIT', 'HEALTH_CONNECT'] as const;
+
+export const MEDICATION_STATUSES = ['ACTIVE', 'PAUSED', 'COMPLETED', 'DELETED'] as const;
+export const MEDICATION_LOG_STATUSES = ['PENDING', 'TAKEN', 'SKIPPED'] as const;
+
+export const GOAL_TYPES = [
+  'DAILY_WATER_ML', 'DAILY_SLEEP_HOURS', 'DAILY_STEPS',
+  'DAILY_ACTIVE_MINUTES', 'DAILY_CALORIES'
+] as const;
+
+export const HEALTH_METRIC_TYPES = [
+  'WEIGHT', 'HEIGHT', 'BLOOD_PRESSURE_SYSTOLIC', 'BLOOD_PRESSURE_DIASTOLIC',
+  'HEART_RATE', 'BLOOD_GLUCOSE', 'BODY_TEMPERATURE', 'OXYGEN_SATURATION',
+  'BMI', 'BODY_FAT_PERCENTAGE', 'WAIST_CIRCUMFERENCE', 'OTHER'
+] as const;
+
+export const DEFAULT_WATER_GOAL_ML = 2000;
+export const DEFAULT_SLEEP_GOAL_HOURS = 8;
+export const DEFAULT_STEPS_GOAL = 10000;
+export const DEFAULT_ACTIVE_MINUTES_GOAL = 30;
+
+export const HEALTH_METRIC_UNITS: Record<string, string> = {
+  WEIGHT: 'kg',
+  HEIGHT: 'cm',
+  BLOOD_PRESSURE_SYSTOLIC: 'mmHg',
+  BLOOD_PRESSURE_DIASTOLIC: 'mmHg',
+  HEART_RATE: 'bpm',
+  BLOOD_GLUCOSE: 'mmol/L',
+  BODY_TEMPERATURE: '°C',
+  OXYGEN_SATURATION: '%',
+  BMI: 'kg/m²',
+  BODY_FAT_PERCENTAGE: '%',
+  WAIST_CIRCUMFERENCE: 'cm',
+};

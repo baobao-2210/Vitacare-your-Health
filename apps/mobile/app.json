@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "VitaCare",
+    "slug": "vitacare",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "vitacare",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F0FDF4"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.vitacare.app",
+      "infoPlist": {
+        "NSMotionUsageDescription": "VitaCare cần quyền truy cập cảm biến chuyển động để tự động đếm bước chân và theo dõi hoạt động hàng ngày của bạn.",
+        "NSHealthShareUsageDescription": "VitaCare cần quyền truy cập dữ liệu sức khỏe để đồng bộ thông tin.",
+        "NSHealthUpdateUsageDescription": "VitaCare cần quyền ghi dữ liệu sức khỏe."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#F0FDF4"
+      },
+      "package": "com.vitacare.app",
+      "permissions": [
+        "android.permission.ACTIVITY_RECOGNITION",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.HEALTH_READ",
+        "android.permission.HEALTH_WRITE"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      ["expo-notifications", { "icon": "./assets/images/icon.png", "color": "#166534" }]
+    ],
+    "experiments": { "typedRoutes": true }
+  }
+}
